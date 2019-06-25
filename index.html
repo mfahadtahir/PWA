@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>FYLD.com</title>
+    <meta name="description" content="Data Witness">
+    <meta name="author" content="FYLD.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-title" content="@FYLD.com">
+    <meta name="application-name" content="@FYLD.com">
+    <meta name="msapplication-TileColor" content="#989a9e">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel="manifest" href="manifest.json" >
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Lato";
+            -webkit-transition-duration: .7s;
+            -o-transition-duration: .7s;
+            transition-duration: .7s;}
+        body {
+            background-color: #5e829e;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(0,800,389)'%3E%3Cstop offset='0' stop-color='%23444366'/%3E%3Cstop offset='1' stop-color='%2361464d'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='963' height='802.5' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.03'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+            /* background by SVGBackgrounds.com */
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            min-height: 100vh;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;}
+        header {
+            width: 100%;
+            background: #1d1d1d;
+            -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);}
+        header a {
+            font-size: 1.5em;
+            color: #989a9e;
+            text-decoration: none;
+            text-align: center;
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            display: inline-block;
+            padding: 15px;}
+        header a:hover {
+            cursor: pointer;
+            text-shadow: 0px 0px 5px rgba(245, 245, 245, 0.75);
+            color: #e8e8e8;}
+        .glow {
+            cursor: pointer;
+            text-shadow: 0px 0px 5px rgba(245, 245, 245, 0.75);
+            color: #cccccc;}
+        #headboxx {
+            width: 70%;
+            margin: 0 auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;}
+        #svgboxx {
+            width: 400px;
+            min-width: 250px;
+            max-width: 100%;
+            padding: 15px;}
+        #linkboxx {
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            text-align: right;}
+        #mainn {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;}
+        #mainn.small-mainn {
+            height: 80px;
+            margin: 30px 0;}
+        #boxx {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, .1);
+            width: 50%;
+            height: 150px;
+            margin: 0 auto;}
+        #boxx form {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            width: 100%;}
+        #emailinput {
+            -webkit-box-flex: 0; 
+            -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+            border-radius: 2px;
+            outline: 0;
+            border: 0;
+            padding: 0 10px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            letter-spacing: 2px;}
+        #boxx label {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 1 50px;  /* maybe better to do flex-around instead of 50px. as is keeps textbox+button centered well*/
+            flex: 0 1 50px;
+            position: relative;
+            height: 35px;
+            margin-left: 3px;}
+        #submitsvgblack {
+            height:100%;
+            position: absolute;
+            cursor: pointer;}
+        #submitsvgblack:hover {
+            background: rgba(255, 255, 255, .7);
+            -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            transform: scale(1.05);}
+        #submitsvgblack:click {
+            /* transformX or translateX or whatever to make move right 5px */
+            /* perhaps "e.preventDefault();" from below is complicating this */
+        }
+        .hide { display: none;}
+        .closeX {
+            float: right;
+            background: rgba(255, 255, 255, .5);
+            font-size: 3em; 
+            padding: 10px;}
+        .closeX:hover {
+            cursor: pointer;
+            text-shadow: 0px 0px 3px rgba(245, 245, 245, 0.5);
+            color: #707070;}
+        .protecsvg {
+            width: 150px;
+            height: 150px;
+            max-width: 100%;
+            padding: 15px;}
+        #promise {
+            width: 100%;
+            background: rgba(255, 255, 255, .15);
+            text-align: center;
+            color: #2b2b2b;}
+        #technology {
+            width: 100%;
+            background: rgba(255, 255, 255, .15);
+            text-align: center;
+            color: #2b2b2b;}
+        .toggle-content {
+            display: none;
+            height: 0;
+            overflow: hidden;}
+        .toggle-content.is-visible {
+            display: block;
+            height: auto;}
+        .twocolumntext {
+            -webkit-column-count: 2;
+            column-count: 2;
+            -webkit-column-gap: 40px;
+            column-gap: 40px;
+            -webkit-column-rule: dotted 2px gray;
+            column-rule: dotted 2px gray;
+            font-size: 1.25em;
+            width: 60%;
+            margin: 0 auto;
+            padding: 20px 0 40px 0;}
+        footer {
+            width: 100%;
+            background: #232323;
+            overflow: hidden;}
+        #shoeboxx {
+            width: 70%;
+            margin: 0 auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap-reverse;
+            flex-wrap: wrap-reverse;}
+        #disclaimer {
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            text-align: justify;
+            min-width: 250px;
+            padding: 15px;}
+        #aboutus {
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            text-align: justify;
+            min-width: 250px;
+            padding: 15px;}
+        #svgcopyright {
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            min-width: 250px;
+            padding: 15px;}
+        footer h3 {
+            color: #fda93b;
+            font-size: 1.25em;
+            margin-bottom: 10px;}
+        footer p {
+            color: #989a9e;
+            font-size: 1em;}
+        footer svg {
+            width: 300px;
+            min-width: 250px;
+            height: 75px;
+            max-width: 100%;}
+        #copyright {
+            color: #989a9e;
+            font-size: 0.85em;
+            font-family: Arial;
+            letter-spacing: 1px;
+            margin-top: 12px;
+            margin-left: 4px;}
+        @media (min-width:801px) and (max-width: 1000px) {
+            .twocolumntext {
+                -webkit-column-count: 1;
+                column-count: 1;
+                width: 75%;}}
+        @media (min-width: 701px) and (max-width: 800px) {
+            .twocolumntext {
+                -webkit-column-count: 1;
+                column-count: 1;
+                width: 80%;}
+            #shoeboxx {width: 80%;}
+            #boxx {width: 60%;}
+            #headboxx {width: 80%;}}
+        @media (min-width: 401px) and (max-width: 700px) {
+            .twocolumntext {
+                -webkit-column-count: 1;
+                column-count: 1;
+                width: 85%;}
+            #shoeboxx {width: 90%;}
+            #boxx {width: 70%;}
+            #headboxx {width: 90%;}}
+        @media (min-width: 351px) and (max-width: 400px) {
+            .twocolumntext {
+                -webkit-column-count: 1;
+                column-count: 1;
+                width: 90%;}
+            #shoeboxx {width: 95%;}
+            #boxx {width: 95%;}
+            #headboxx {width: 95%;}}
+        @media (max-width: 350px) {
+            .twocolumntext {
+                -webkit-column-count: 1;
+                column-count: 1;
+                width: 90%;}
+            #shoeboxx {width: 98%;}
+            #boxx {width: 100%;}
+            #headboxx {width: 98%;}}
+        @media (max-width: 678px) {#linkboxx {text-align: center;}}
+    </style>
+</head>
+<body>
+<header>
+    <div id="headboxx">
+        <svg id="svgboxx" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 775 195" xml:space="preserve"><style> @keyframes reduce { 100% { transform: translateX(0px) scale(1);}} .icon { transform-origin: 85px 200px; transform: translateX(260px) scale(1.0); animation: reduce 0.6s 0.25s cubic-bezier(.74,.02,.36,.97) forwards;} @keyframes fade_in { 100% { opacity: 1;}} .txt path:nth-of-type(1) { opacity: 0; animation: fade_in 0.5s 0.75s linear forwards;} .txt path:nth-of-type(2) { opacity: 0; animation: fade_in 0.5s 0.775s linear forwards;} .txt path:nth-of-type(3) { opacity: 0; animation: fade_in 0.5s 0.8s linear forwards;} .txt path:nth-of-type(4) { opacity: 0; animation: fade_in 0.5s 0.825s linear forwards;} .txt path:nth-of-type(5) { opacity: 0; animation: fade_in 0.5s 0.85s linear forwards;} .txt path:nth-of-type(6) { opacity: 0; animation: fade_in 0.5s 0.875s linear forwards;} .txt path:nth-of-type(7) { opacity: 0; animation: fade_in 0.5s 0.9s linear forwards;} .txt path:nth-of-type(8) { opacity: 0; animation: fade_in 0.5s 0.925s linear forwards;} .txt path:nth-of-type(9) { opacity: 0; animation: fade_in 0.5s 0.95s linear forwards;} </style> <g class="txt" fill="#fda93b"> <path d="m278.15 109.62c-1.4 2.2-3.1 3.8-5 4.8s-4.1 1.5-6.6 1.5c-4.1 0-7.2-1.1-9.4-3.4-2.1-2.2-3.2-5.5-3.2-9.9 0-6.2 1.8-11.4 5.4-15.7s8.1-6.3 13.4-6.3c2.1 0 3.9 0.4 5.4 1.3s2.8 2.1 3.8 3.8l2.1-3.8h7l-5.7 23.4c-0.1 0.3-0.1 0.6-0.2 0.9s-0.1 0.5-0.1 0.7c0 0.9 0.3 1.6 0.9 2.1s1.5 0.7 2.8 0.7c1 0 2.1-0.3 3.2-0.8s2.1-1.3 3.1-2.2c2.2-2.1 3.9-4.5 5.1-7.3 1.2-2.8 1.7-5.8 1.7-9.2 0-6.3-2.4-11.4-7.2-15.4s-11.1-6-18.7-6c-3.7 0-7.1 0.4-10.3 1.3s-6 2.2-8.6 3.9c-4.4 3-7.8 6.7-10.2 11.1s-3.6 9.3-3.6 14.6c0 8 2.7 14.4 8.1 19.2s12.6 7.3 21.6 7.3c4.2 0 8.3-0.6 12.4-1.9 4-1.3 7.8-3.1 11.2-5.5l3.2 4.6c-4 3-8.2 5.2-12.7 6.8-4.5 1.5-9.1 2.3-14 2.3-5 0-9.6-0.6-13.8-1.9s-7.9-3.1-11.2-5.6c-4-3.2-7.1-6.8-9.1-10.9s-3-8.8-3-14c0-4.3 0.7-8.5 2.1-12.4s3.4-7.5 6-10.8c3.9-4.7 8.5-8.3 13.9-10.7s11.4-3.6 18.1-3.6c4.4 0 8.5 0.6 12.4 1.8s7.2 2.9 10.1 5c3.5 2.7 6.1 5.9 7.9 9.4 1.7 3.5 2.6 7.5 2.6 11.9 0 4.3-0.9 8.3-2.6 11.9-1.7 3.6-4.2 6.7-7.4 9.3-1.8 1.5-3.8 2.6-6 3.3-2.1 0.8-4.4 1.2-6.7 1.2-2.8 0-4.8-0.5-6.2-1.6-1.2-1.4-1.9-3-2-5.2zm2-16.7c-0.3-2.1-1.1-3.7-2.2-4.8-1.2-1.1-2.7-1.7-4.6-1.7-3 0-5.5 1.6-7.7 4.8s-3.3 7.1-3.3 11.6c0 2.4 0.5 4.2 1.6 5.5s2.6 1.9 4.6 1.9c2.2 0 4.1-0.8 5.9-2.5 1.8-1.6 3-3.8 3.7-6.4z"/> <path d="m336.85 120.32v-58h25.4v10.4h-11.9v14.4h10.8v10.4h-10.8v22.8z"/> <path d="m396.15 120.32v-18.8l-12-39.2h13.7l5.6 26.3 5.2-26.3h12.8l-11.8 39.2v18.8z"/> <path d="m445.55 120.32v-58h13.5v47.6h12.8v10.4z"/> <path d="m496.25 120.32v-58h17.1c6.9 0 11.5 1.2 13.9 3.7 2.4 2.4 3.6 7.2 3.6 14.4v22c0 7.1-1.2 11.9-3.6 14.4-2.4 2.4-7 3.7-13.9 3.7h-17.1zm20.7-14.3v-29.4c0-1.6-0.2-2.6-0.7-3.2-0.5-0.5-1.4-0.8-2.9-0.8h-3.6v37.3h3.6c1.4 0 2.4-0.3 2.9-0.8s0.7-1.5 0.7-3.1z"/> <path d="m558.45 120.32v-12.8h11.9v12.8z"/> <path d="m618.45 81.918v-5.9c0-1.6-0.2-2.7-0.7-3.3-0.4-0.5-1.3-0.8-2.7-0.8-1.3 0-2.2 0.3-2.6 0.8s-0.6 1.6-0.6 3.3v30.6c0 1.7 0.2 2.8 0.6 3.3s1.3 0.8 2.6 0.8c1.4 0 2.3-0.3 2.7-0.8s0.7-1.6 0.7-3.3v-7.9h12.3v6c0 3.9-0.2 6.7-0.6 8.5-0.4 1.7-1.1 3.2-2.1 4.4-1 1.3-2.3 2.2-3.9 2.7s-4.5 0.8-8.8 0.8c-4.9 0-8.3-0.3-10.1-0.8s-3.2-1.4-4.4-2.7c-1.1-1.2-1.9-2.7-2.3-4.4s-0.7-4.6-0.7-8.4v-26.8c0-3.9 0.2-6.7 0.7-8.4s1.2-3.2 2.4-4.4c1.2-1.3 2.8-2.2 4.7-2.7 2-0.5 5.2-0.8 9.7-0.8 3.9 0 6.7 0.3 8.5 0.8s3.1 1.4 4.2 2.7c1 1.2 1.7 2.7 2.1 4.5s0.6 4.6 0.6 8.4v4h-12.3z"/> <path d="m691.85 104.72c0 4-0.2 6.8-0.7 8.5-0.4 1.7-1.2 3.1-2.3 4.3-1.2 1.3-2.6 2.2-4.4 2.7s-5.1 0.8-10 0.8-8.3-0.3-10.1-0.8-3.2-1.4-4.4-2.7c-1.1-1.2-1.9-2.7-2.3-4.4s-0.7-4.6-0.7-8.4v-26.8c0-3.9 0.2-6.7 0.7-8.4s1.2-3.2 2.4-4.4c1.2-1.3 2.8-2.2 4.7-2.7 2-0.5 5.2-0.8 9.7-0.8s7.7 0.3 9.7 0.8c1.9 0.5 3.5 1.4 4.7 2.7 1.1 1.2 1.9 2.7 2.4 4.4s0.7 4.5 0.7 8.4v26.8zm-13.8 1.9v-30.6c0-1.6-0.2-2.7-0.7-3.2s-1.4-0.8-2.9-0.8-2.4 0.3-2.9 0.8-0.7 1.6-0.7 3.2v30.6c0 1.6 0.2 2.7 0.7 3.3 0.5 0.5 1.5 0.8 2.9 0.8s2.4-0.3 2.9-0.8c0.5-0.6 0.7-1.7 0.7-3.3z"/> <path d="m719.75 120.32v-58h19.6l7.8 45.8 8.2-45.8h19.3v58h-12.2l0.8-49-9 49h-15l-8.7-49 1 49z"/> </g><g class="icon"><path class="box" fill="#fda93b" d="m197.05 0.51806c5.9-2 12.2 2 12.4 8.4 7.5 47.5 15.1 94.9 22.6 142.4 1.8 5.4-1.4 11.8-7.5 12-63.5 10.4-127 20.8-190.7 31-5.4 1.6-10.6-2.9-10.6-8.4-7.7-48.4-15.8-96.7-23.1-145.1-1.1-5.4 4.1-9.5 9.3-9.7 62.4-10.3 125-20.5 187.6-30.6z"/> <path class="check" fill="white" d="m119.95 87.018c25.3-30.7 56.9-55.6 90.2-77.3l0.7 4.1c0.2 1.6 0.5 4.3 0.7 5.9-31.9 28.5-62.4 58.8-89.3 92.2-21.5-8.4-42.7-16.9-64.2-25.3 3.4-7.5 6.8-14.7 9.9-22.1 17.5 7.4 34.6 15.1 52 22.5z"/> <g class="iconTxt" fill="white"> <path d="m51.849 155.12v-32.6h14.3v5.8h-6.7v8.1h6.1v5.8h-6.1v12.8h-7.6z"/> <path d="m94.849 155.82v-10.6l-6.8-22h7.7l3.1 14.8 2.9-14.8h7.2l-6.6 22.1v10.6h-7.5z"/> <path d="m130.65 155.82v-32.6h7.6v26.8h7.2v5.8z"/> <path d="m169.05 155.12v-32.6h9.6c3.9 0 6.5 0.7 7.8 2.1s2 4.1 2 8.1v12.4c0 4-0.7 6.7-2 8.1s-4 2.1-7.8 2.1h-9.6zm11.7-8.1v-16.5c0-0.9-0.1-1.5-0.4-1.8s-0.8-0.4-1.6-0.4h-2v21h2c0.8 0 1.3-0.2 1.6-0.5 0.2-0.3 0.4-0.9 0.4-1.8z"/> </g></g></svg>
+        <div id="linkboxx">
+            <a id="promiseLink" href="#promise">PROMISE</a>
+            <a id="technologyLink" href="#technology">TECHNOLOGY</a>
+        </div>
+    </div>
+</header>
+<div id="mainn">
+    <div id="boxx">
+        <form action="/processemail" method="post"> <!-- add to or fix this so submit works when javascript disabled -->
+            <input id="emailinput" placeholder="Your Email" type="email" autocomplete="off" required>
+          <label>
+            <input id="submitButton" class="hide" value="submit" type="submit">
+            <svg id="submitsvgblack" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" version="1.1" style="shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;" viewbox="0 0 334 215" x="0px" y="0px" fill-rule="evenodd" clip-rule="evenodd"><defs><style type="text/css">.fil0 {fill:#1d1d1d;}</style></defs><g><path class="fil0" d="M181 125l135 -125 -298 0 135 125c8,8 20,8 28,0zm41 -5l-25 23c-8,8 -19,12 -30,12 -11,0 -22,-4 -31,-12l-24 -23 -95 95 300 0 -95 -95zm18 -16l94 94 0 -182 -94 88zm-146 0l-94 -88 0 182 94 -94z"></path></g></svg>
+          </label>
+        </form>    
+    </div>
+</div>
+<div id="promise" class="toggle-content is-visible">
+    <div id="closeX1" class="closeX hide">X</div>
+    <svg class="protecsvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewbox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><path d="M99.284,53.229L90,27.704c-0.104-0.399-0.369-0.738-0.73-0.936c-0.362-0.198-0.791-0.237-1.183-0.111l-17.101,6.717  c-2.899-1.623-13.879-7.679-17.322-8.252c-0.569-0.095-1.18-0.143-1.814-0.143c-2.993,0-5.866,1.06-6.628,1.363  c-1.768,0.208-11.123,1.425-17.421,4.574c-5.487-2.828-9.85-6.082-9.895-6.115c-0.332-0.248-0.752-0.351-1.158-0.277  c-0.408,0.071-0.768,0.308-0.995,0.653L0.747,47.983c-0.443,0.673-0.275,1.576,0.381,2.045l18.934,13.523  c-0.654,1.523-0.688,3.053-0.079,4.438c1.046,2.381,3.656,3.726,5.039,4.293c1.061,4.283,3.776,4.951,5.363,4.951  c0.532,0,1.03-0.074,1.464-0.176c1.515,3.354,3.603,4.107,5.172,4.106c0,0,0,0,0.001,0c0.807,0,1.527-0.204,2.1-0.448  c0.935,1.046,2.598,2.436,5.017,2.738c0.253,0.032,0.492,0.046,0.715,0.046c1.465,0,2.37-0.62,2.871-1.141  c0.683-0.71,0.971-1.587,1.091-2.255l3.341,2.343l0.09,0.058c0.294,0.177,2.397,1.39,4.634,1.39c0.67,0,1.353-0.108,2.001-0.388  c0.782-0.336,1.75-1.027,2.38-2.45c1.275,0.065,3.223-0.069,4.866-1.211c1.248-0.866,2.098-2.126,2.534-3.753  c1.269-0.11,3.175-0.52,4.672-1.887c1.113-1.017,1.807-2.357,2.071-3.999c1.336-0.02,3.221-0.317,4.658-1.613  c1.373-1.237,2.017-3.054,1.937-5.39l16.505-8.253C99.139,54.634,99.464,53.915,99.284,53.229z M22.727,66.777  c-0.29-0.663-0.244-1.355,0.145-2.178c0.937-1.983,2.057-3.168,2.997-3.168c0.564,0,1.247,0.414,1.976,1.176  c-1.148,1.428-2.618,3.688-3.012,6.229C23.967,68.323,23.098,67.627,22.727,66.777z M27.794,70.9l-0.001-0.009  c-0.406-2.232,0.978-4.573,2.13-6.074l1.028-0.971c0.656-0.619,2.065-1.601,3.055-1.601c0.859,0,1.315,1.138,1.561,2.304  c-1.279,1.521-4.335,5.582-4.371,9.577c-0.245,0.06-0.522,0.106-0.812,0.106C29.889,74.233,28.382,74.233,27.794,70.9z   M37.021,78.164c-1.346,0.001-2.245-1.69-2.786-3.217l0.01-0.002c-0.542-2.979,2.458-7.148,3.86-8.747  c0.235-0.105,0.713-0.282,1.273-0.282c0.902,0,1.688,0.502,2.354,1.473c-0.644,0.329-1.235,0.808-1.756,1.432  c-1.745,2.092-2.546,5.694-2.1,9.156C37.616,78.079,37.323,78.164,37.021,78.164z M46,79.201c0,0.236-0.126,0.811-0.394,1.084  c-0.053,0.053-0.238,0.215-0.729,0.215c-0.107,0-0.234-0.008-0.355-0.022c-2.03-0.254-3.264-1.832-3.594-2.311  c-0.502-2.759,0.065-5.881,1.354-7.425c0.494-0.593,1.03-0.881,1.641-0.882c0.201,0.009,1.765,0.162,2.56,2.835l-0.525,6.328  L46,79.121V79.201z M78.062,66.358c-0.86,0.78-2.26,0.889-3.15,0.844l-11.433-10.37c-0.612-0.554-1.562-0.51-2.119,0.104  c-0.557,0.613-0.51,1.563,0.104,2.119l11.03,10.006c-0.076,1.269-0.456,2.261-1.171,2.919c-0.95,0.875-2.28,1.09-3.078,1.137  L57.505,62.859c-0.6-0.571-1.548-0.55-2.121,0.049c-0.572,0.6-0.55,1.549,0.049,2.121l10.396,9.93  c-0.229,1.102-0.679,1.908-1.4,2.414c-0.707,0.495-1.562,0.653-2.291,0.688c-0.039-0.048-0.059-0.105-0.104-0.148l-9.352-8.872  c-0.6-0.569-1.55-0.546-2.121,0.056c-0.57,0.601-0.545,1.55,0.056,2.12l8.168,7.749l-0.028,0.129  c-0.295,1.326-0.867,1.574-1.056,1.655c-1.17,0.51-3.195-0.404-3.871-0.793l-4.697-3.293l0.385-4.234l-0.067-0.256  c-0.887-3.354-2.908-4.74-4.482-5.162c-1.709-3.541-4.2-4.095-5.59-4.095c-0.397,0-0.771,0.042-1.11,0.107  c-0.996-3.242-3.03-3.777-4.263-3.777c-1.47,0-2.89,0.751-3.865,1.422c-1.376-1.485-2.809-2.236-4.271-2.236  c-1.584,0-3.037,0.872-4.29,2.518L4.046,48.426L17.4,28.128c1.846,1.286,5.476,3.685,9.738,5.815  c0.439,0.22,0.958,0.211,1.389-0.025c3.252-1.774,7.764-2.949,11.365-3.672c-0.918,0.847-1.964,1.867-3.164,3.119  c-4.901,5.116-2.766,8.218-2.454,8.619c1.205,1.398,2.855,2.137,4.772,2.136c4.205,0,8.849-3.568,10.189-4.676l3.631-0.403  c2.471,8.528,12.086,12.189,14.149,12.883l11.749,11.748c0.068,0.068,0.155,0.103,0.232,0.154  C78.958,64.965,78.652,65.821,78.062,66.358z M80.123,60.787l-11.24-11.239c-0.176-0.176-0.392-0.305-0.63-0.376  c-0.111-0.034-11.147-3.439-12.76-12.044c-0.135-0.716-0.76-1.224-1.474-1.224c-0.055,0-0.11,0.003-0.167,0.009l-5.402,0.6  c-0.307,0.034-0.597,0.163-0.829,0.367c-1.335,1.179-5.479,4.24-8.575,4.24c-1.015,0-1.786-0.318-2.415-1  c-0.105-0.265-0.516-1.78,2.263-4.68c5.07-5.291,7.218-6.224,7.213-6.224c0.033-0.011,0.065-0.024,0.097-0.038  c0.028-0.012,2.836-1.201,5.644-1.201c0.47,0,0.914,0.034,1.321,0.102c2.449,0.408,11.457,5.145,16.914,8.229  c0.365,0.208,0.802,0.251,1.2,0.122L87.5,30l8.573,22.813L80.123,60.787z"></path></svg>
+    <h1>Promise</h1>
+    <div class="twocolumntext">
+        <p>Nam faucibus velit non dolor interdum, sed semper dolor placerat. Phasellus volutpat convallis diam, id auctor orci. Etiam cursus, metus sed mollis placerat, felis risus gravida dolor, vel congue turpis est et enim. In vel fermentum libero. Cras eget accumsan ante, ut feugiat lorem. Suspendisse maximus, nibh non interdum aliquet, mauris erat hendrerit libero, ac aliquet dolor felis ac leo. Nunc sed nibh quis nibh bibendum placerat id in nisl. Vestibulum tincidunt massa nisi, rhoncus pulvinar felis convallis sed.</p>
+        <br>
+        <p>Nullam eu ipsum id lectus dignissim molestie nec aliquet risus. In ultrices eros sit amet enim cursus posuere. Fusce venenatis nulla ut orci dapibus condimentum. Praesent et purus vel ante efficitur sagittis non sit amet dui. Cras feugiat lorem ac arcu eleifend, vel efficitur orci dignissim. Nunc commodo gravida tristique. Vivamus ornare, dui sit amet finibus scelerisque, nibh felis lobortis neque, at viverra arcu ipsum et felis. Aliquam vel tempus quam, et aliquet magna. Nam sodales nulla id diam ultricies, in fringilla velit condimentum. Praesent dictum augue vitae libero aliquam aliquam. Integer vel pharetra tellus. Vestibulum suscipit sed nulla at consectetur.</p>
+        <br>
+        <p>Mauris ac pharetra ipsum. Nulla sit amet urna sit amet neque vestibulum bibendum. Ut bibendum quis nunc non consequat. Vestibulum et tortor odio. Pellentesque eget scelerisque enim. Nulla vel dignissim dolor. Sed commodo pellentesque libero ac cursus.</p>
+    </div>
+</div>
+<div id="technology" class="toggle-content is-visible">
+    <div id="closeX2" class="closeX hide">X</div>
+    <svg class="protecsvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewbox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve"><g><path d="M10.302,29.014c0,0.001,0.001,0.002,0.001,0.003C10.303,29.016,10.303,29.015,10.302,29.014z M10.292,28.977L10.292,28.977   L10.292,28.977z M24.28,58.273c-0.429-0.498-1.189-1.121-2.835-0.795c-0.508,0.122-2.197,0.495-4.129,0.585   c-2.746,0.128-4.8-0.369-6.104-1.479c-1.132-0.964-1.686-2.375-1.56-3.971l0.024-0.293l0.096-0.265   c0.173-0.515,0.366-1.72-0.117-2.241c-0.809-0.765-1.362-2.094-1.005-3.55c-0.582-0.912-0.832-1.846-0.728-2.732   c0.038-0.316,0.119-0.618,0.24-0.902c-1.201-0.505-2.384-1.309-2.907-2.577c-0.279-0.676-0.582-2.044,0.521-3.62L5.91,36.26   c1.104-1.275,2.261-2.868,3.096-4.258c1.289-2.145,1.292-2.916,1.286-3.014c-0.446-1.191-0.943-2.532-0.765-4.062   c0.405-4.64,2.924-15.798,17.477-19.688l0.276-0.074c0.112-0.034,0.25-0.071,0.409-0.097c5.234-1.266,10.547-0.889,15.367,1.091   c4.51,1.852,8.41,4.999,11.277,9.103c2.858,4.091,4.468,8.817,4.655,13.668c0.202,5.22-1.287,10.351-4.305,14.839   c-0.892,1.399-1.961,2.885-3.091,4.298l-0.095,0.12l-0.092,0.087c-0.157,0.163-2.292,2.531,0.161,7.912   c0.554,1.216,0.121,2.655-1.015,3.361l0,0l-0.016-0.025c-2.089-3.502-2.928-6.675-2.496-9.43c0.348-2.214,1.418-3.368,1.634-3.581   c1.076-1.346,2.089-2.756,2.933-4.082l0.018-0.026c2.73-4.053,4.076-8.679,3.894-13.376c-0.169-4.376-1.626-8.646-4.213-12.348   c-2.594-3.713-6.118-6.559-10.19-8.231c-4.351-1.787-9.156-2.119-13.898-0.963l-0.066,0.017l-0.067,0.009   c-0.033,0.004-0.107,0.029-0.167,0.048l-0.243,0.081h-0.073c-13.028,3.501-15.26,13.418-15.615,17.522L11.984,25.2   c-0.115,0.953,0.248,1.92,0.631,2.943c0.257,0.672,0.396,1.92-1.36,4.913c-0.912,1.555-2.202,3.345-3.454,4.796l-0.018,0.023   c-0.317,0.463-0.397,0.867-0.244,1.237c0.258,0.627,1.241,1.223,2.629,1.595l0.917,0.245v1.97l-0.416,0.369   c-0.172,0.153-0.268,0.327-0.293,0.533c-0.046,0.388,0.177,0.923,0.611,1.465l0.471,0.59l-0.308,0.688   c-0.391,0.871,0.146,1.4,0.208,1.457l0.047,0.046c1.665,1.7,0.825,4.426,0.708,4.777c-0.054,0.79,0.182,1.414,0.701,1.856   c1.676,1.427,6.014,0.864,8.074,0.367l0.044-0.011c2.704-0.548,4.331,0.569,5.221,1.601c0.623,0.724,0.982,1.513,1.164,2.008   c0.093,0.253-0.053,0.531-0.315,0.597l-1.528,0.387c-0.22,0.056-0.446-0.059-0.532-0.269C24.822,59.085,24.61,58.656,24.28,58.273z   "></path><g><path d="M40.483,22.096c-0.293-0.88-0.587-1.761-1.027-2.494l0.88-2.054l-2.935-2.935l-2.054,0.88    c-0.88-0.44-1.614-0.734-2.494-1.027l-0.734-2.054h-4.255l-0.734,2.054c-0.88,0.293-1.761,0.587-2.494,1.027l-2.054-0.88    l-2.935,2.935l0.88,2.054c-0.44,0.734-0.734,1.614-1.027,2.494l-2.054,0.734v4.255l2.054,0.734    c0.293,0.88,0.587,1.761,1.027,2.494l-0.88,2.054l2.935,2.935l2.054-0.88c0.734,0.44,1.614,0.734,2.494,1.027l0.734,2.054h4.255    l0.734-2.054c0.88-0.293,1.761-0.587,2.494-1.027l2.054,0.88l2.935-2.935l-0.88-2.054c0.44-0.734,0.734-1.614,1.027-2.494    l2.054-0.734v-4.255L40.483,22.096z M29.918,30.166c-2.788,0-5.136-2.348-5.136-5.136s2.348-5.136,5.136-5.136    s5.136,2.348,5.136,5.136S32.706,30.166,29.918,30.166z"></path><path d="M41.657,41.904c0-0.44,0-0.88,0-1.174l0.734-0.734l-0.734-1.761H40.63c-0.293-0.293-0.587-0.587-0.88-0.88v-1.027    l-1.761-0.734l-0.734,0.734c-0.44,0-0.88,0-1.174,0l-0.734-0.734l-1.761,0.734v1.027c-0.293,0.293-0.587,0.587-0.88,0.88h-1.027    l-0.734,1.761l0.734,0.734c0,0.44,0,0.88,0,1.174l-0.587,0.734l0.734,1.761h1.027c0.293,0.293,0.587,0.587,0.88,0.88v1.027    l1.761,0.734l0.734-0.734c0.44,0,0.88,0,1.174,0l0.734,0.734l1.761-0.734v-1.027c0.293-0.293,0.587-0.587,0.88-0.88h1.027    l0.734-1.761L41.657,41.904z M35.787,43.518c-1.174-0.44-1.761-1.907-1.321-3.081c0.44-1.174,1.907-1.761,3.081-1.321    s1.761,1.907,1.321,3.081C38.429,43.372,37.108,43.958,35.787,43.518z"></path><path d="M51.047,32.514c0-0.44,0-0.88,0-1.174l0.734-0.734l-0.734-1.761H50.02c-0.293-0.293-0.587-0.587-0.88-0.88v-1.027    l-1.761-0.734l-0.734,0.734c-0.44,0-0.88,0-1.174,0l-0.734-0.587l-1.761,0.734v1.027c-0.293,0.293-0.587,0.587-0.88,0.88H41.07    l-0.734,1.761l0.734,0.734c0,0.44,0,0.88,0,1.174l-0.734,0.734l0.734,1.761h1.027c0.293,0.293,0.587,0.587,0.88,0.88v1.027    l1.761,0.734l0.734-0.734c0.44,0,0.88,0,1.174,0l0.734,0.734l1.761-0.734v-1.027c0.293-0.293,0.587-0.587,0.88-0.88h1.027    l0.734-1.761L51.047,32.514z M45.178,34.128c-1.174-0.44-1.761-1.907-1.321-3.081s1.907-1.761,3.081-1.321    s1.761,1.907,1.321,3.081C47.819,33.981,46.352,34.568,45.178,34.128z"></path></g></g></svg>
+    <h1>Technology</h1>
+    <div class="twocolumntext">
+        <p>Proin at nibh quis risus porta facilisis. Phasellus id arcu at tortor ultricies tempor. Curabitur et felis luctus, volutpat quam a, venenatis ante. Aenean ac lectus nec arcu sodales sollicitudin. Sed luctus semper lacus, in placerat purus tristique vel. Sed sit amet massa quis lorem faucibus congue. Cras rhoncus auctor varius. Nam et varius mi. Sed a massa at nunc facilisis porta non quis sem. Praesent iaculis congue dolor, elementum auctor diam posuere nec. Cras luctus augue non mattis aliquam.</p>
+        <br>
+        <p>Fusce sodales risus finibus dignissim tempor. Vestibulum tincidunt, metus ac suscipit hendrerit, velit neque ultricies lectus, et dignissim ipsum neque ornare magna. Proin ultrices rutrum sapien, in elementum sem semper in. Phasellus eget lobortis sem. Proin pharetra sem in fringilla euismod. Integer ac consectetur mi. In hac habitasse platea dictumst. Vivamus ultricies enim a enim ullamcorper, vel condimentum diam placerat. Nullam aliquam lacus nec est porttitor, sit amet iaculis enim suscipit. Fusce quis consectetur nisi.</p>
+        <br>
+        <p>Nunc faucibus sit amet ipsum sed malesuada. Donec maximus malesuada aliquam. Sed feugiat, justo et posuere pulvinar, odio sem malesuada tellus, non mollis ex risus eget libero. Proin eget purus eget sapien feugiat convallis. Donec sit amet est massa. Duis a vehicula sapien, eu vestibulum libero. Sed lacinia, lorem at faucibus fermentum, lorem dui facilisis neque, quis placerat lacus dui nec dui.</p>
+    </div>
+</div>
+<footer>
+    <div id="shoeboxx">
+        <div id="svgcopyright">
+            <svg id="logo-gray-transparent" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 775 195" xml:space="preserve"><defs><mask id="TxtChkMask2"><rect width="100%" height="100%" fill="white"/><path fill="black" d="m51.849 155.12v-32.6h14.3v5.8h-6.7v8.1h6.1v5.8h-6.1v12.8h-7.6z"/><path fill="black" d="m94.849 155.82v-10.6l-6.8-22h7.7l3.1 14.8 2.9-14.8h7.2l-6.6 22.1v10.6h-7.5z"/><path fill="black" d="m130.65 155.82v-32.6h7.6v26.8h7.2v5.8z"/><path fill="black" d="m169.05 155.12v-32.6h9.6c3.9 0 6.5 0.7 7.8 2.1s2 4.1 2 8.1v12.4c0 4-0.7 6.7-2 8.1s-4 2.1-7.8 2.1h-9.6zm11.7-8.1v-16.5c0-0.9-0.1-1.5-0.4-1.8s-0.8-0.4-1.6-0.4h-2v21h2c0.8 0 1.3-0.2 1.6-0.5 0.2-0.3 0.4-0.9 0.4-1.8z"/><path fill="black" d="m119.95 87.018c25.3-30.7 56.9-55.6 90.2-77.3l0.7 4.1c0.2 1.6 0.5 4.3 0.7 5.9-31.9 28.5-62.4 58.8-89.3 92.2-21.5-8.4-42.7-16.9-64.2-25.3 3.4-7.5 6.8-14.7 9.9-22.1 17.5 7.4 34.6 15.1 52 22.5z"/></mask></defs><g class="txt2" fill="#989a9e"><path d="m278.15 109.62c-1.4 2.2-3.1 3.8-5 4.8s-4.1 1.5-6.6 1.5c-4.1 0-7.2-1.1-9.4-3.4-2.1-2.2-3.2-5.5-3.2-9.9 0-6.2 1.8-11.4 5.4-15.7s8.1-6.3 13.4-6.3c2.1 0 3.9 0.4 5.4 1.3s2.8 2.1 3.8 3.8l2.1-3.8h7l-5.7 23.4c-0.1 0.3-0.1 0.6-0.2 0.9s-0.1 0.5-0.1 0.7c0 0.9 0.3 1.6 0.9 2.1s1.5 0.7 2.8 0.7c1 0 2.1-0.3 3.2-0.8s2.1-1.3 3.1-2.2c2.2-2.1 3.9-4.5 5.1-7.3 1.2-2.8 1.7-5.8 1.7-9.2 0-6.3-2.4-11.4-7.2-15.4s-11.1-6-18.7-6c-3.7 0-7.1 0.4-10.3 1.3s-6 2.2-8.6 3.9c-4.4 3-7.8 6.7-10.2 11.1s-3.6 9.3-3.6 14.6c0 8 2.7 14.4 8.1 19.2s12.6 7.3 21.6 7.3c4.2 0 8.3-0.6 12.4-1.9 4-1.3 7.8-3.1 11.2-5.5l3.2 4.6c-4 3-8.2 5.2-12.7 6.8-4.5 1.5-9.1 2.3-14 2.3-5 0-9.6-0.6-13.8-1.9s-7.9-3.1-11.2-5.6c-4-3.2-7.1-6.8-9.1-10.9s-3-8.8-3-14c0-4.3 0.7-8.5 2.1-12.4s3.4-7.5 6-10.8c3.9-4.7 8.5-8.3 13.9-10.7s11.4-3.6 18.1-3.6c4.4 0 8.5 0.6 12.4 1.8s7.2 2.9 10.1 5c3.5 2.7 6.1 5.9 7.9 9.4 1.7 3.5 2.6 7.5 2.6 11.9 0 4.3-0.9 8.3-2.6 11.9-1.7 3.6-4.2 6.7-7.4 9.3-1.8 1.5-3.8 2.6-6 3.3-2.1 0.8-4.4 1.2-6.7 1.2-2.8 0-4.8-0.5-6.2-1.6-1.2-1.4-1.9-3-2-5.2zm2-16.7c-0.3-2.1-1.1-3.7-2.2-4.8-1.2-1.1-2.7-1.7-4.6-1.7-3 0-5.5 1.6-7.7 4.8s-3.3 7.1-3.3 11.6c0 2.4 0.5 4.2 1.6 5.5s2.6 1.9 4.6 1.9c2.2 0 4.1-0.8 5.9-2.5 1.8-1.6 3-3.8 3.7-6.4z"/><path d="m336.85 120.32v-58h25.4v10.4h-11.9v14.4h10.8v10.4h-10.8v22.8z"/><path d="m396.15 120.32v-18.8l-12-39.2h13.7l5.6 26.3 5.2-26.3h12.8l-11.8 39.2v18.8z"/><path d="m445.55 120.32v-58h13.5v47.6h12.8v10.4z"/><path d="m496.25 120.32v-58h17.1c6.9 0 11.5 1.2 13.9 3.7 2.4 2.4 3.6 7.2 3.6 14.4v22c0 7.1-1.2 11.9-3.6 14.4-2.4 2.4-7 3.7-13.9 3.7h-17.1zm20.7-14.3v-29.4c0-1.6-0.2-2.6-0.7-3.2-0.5-0.5-1.4-0.8-2.9-0.8h-3.6v37.3h3.6c1.4 0 2.4-0.3 2.9-0.8s0.7-1.5 0.7-3.1z"/><path d="m558.45 120.32v-12.8h11.9v12.8z"/><path d="m618.45 81.918v-5.9c0-1.6-0.2-2.7-0.7-3.3-0.4-0.5-1.3-0.8-2.7-0.8-1.3 0-2.2 0.3-2.6 0.8s-0.6 1.6-0.6 3.3v30.6c0 1.7 0.2 2.8 0.6 3.3s1.3 0.8 2.6 0.8c1.4 0 2.3-0.3 2.7-0.8s0.7-1.6 0.7-3.3v-7.9h12.3v6c0 3.9-0.2 6.7-0.6 8.5-0.4 1.7-1.1 3.2-2.1 4.4-1 1.3-2.3 2.2-3.9 2.7s-4.5 0.8-8.8 0.8c-4.9 0-8.3-0.3-10.1-0.8s-3.2-1.4-4.4-2.7c-1.1-1.2-1.9-2.7-2.3-4.4s-0.7-4.6-0.7-8.4v-26.8c0-3.9 0.2-6.7 0.7-8.4s1.2-3.2 2.4-4.4c1.2-1.3 2.8-2.2 4.7-2.7 2-0.5 5.2-0.8 9.7-0.8 3.9 0 6.7 0.3 8.5 0.8s3.1 1.4 4.2 2.7c1 1.2 1.7 2.7 2.1 4.5s0.6 4.6 0.6 8.4v4h-12.3z"/><path d="m691.85 104.72c0 4-0.2 6.8-0.7 8.5-0.4 1.7-1.2 3.1-2.3 4.3-1.2 1.3-2.6 2.2-4.4 2.7s-5.1 0.8-10 0.8-8.3-0.3-10.1-0.8-3.2-1.4-4.4-2.7c-1.1-1.2-1.9-2.7-2.3-4.4s-0.7-4.6-0.7-8.4v-26.8c0-3.9 0.2-6.7 0.7-8.4s1.2-3.2 2.4-4.4c1.2-1.3 2.8-2.2 4.7-2.7 2-0.5 5.2-0.8 9.7-0.8s7.7 0.3 9.7 0.8c1.9 0.5 3.5 1.4 4.7 2.7 1.1 1.2 1.9 2.7 2.4 4.4s0.7 4.5 0.7 8.4v26.8zm-13.8 1.9v-30.6c0-1.6-0.2-2.7-0.7-3.2s-1.4-0.8-2.9-0.8-2.4 0.3-2.9 0.8-0.7 1.6-0.7 3.2v30.6c0 1.6 0.2 2.7 0.7 3.3 0.5 0.5 1.5 0.8 2.9 0.8s2.4-0.3 2.9-0.8c0.5-0.6 0.7-1.7 0.7-3.3z"/><path d="m719.75 120.32v-58h19.6l7.8 45.8 8.2-45.8h19.3v58h-12.2l0.8-49-9 49h-15l-8.7-49 1 49z"/></g><path class="box2" mask="url(#TxtChkMask2)" fill="#989a9e" d="m197.05 0.51806c5.9-2 12.2 2 12.4 8.4 7.5 47.5 15.1 94.9 22.6 142.4 1.8 5.4-1.4 11.8-7.5 12-63.5 10.4-127 20.8-190.7 31-5.4 1.6-10.6-2.9-10.6-8.4-7.7-48.4-15.8-96.7-23.1-145.1-1.1-5.4 4.1-9.5 9.3-9.7 62.4-10.3 125-20.5 187.6-30.6z"/></svg>
+            <div id="copyright">Copyright © FYLD.com 2019</div>
+        </div>
+        <div id="aboutus">
+            <h3>About Us</h3>
+            <p>Aliquam bibendum imperdiet venenatis. Morbi scelerisque ultrices metus, ut consequat arcu. Aenean semper, orci imperdiet vehicula lacinia, nulla lorem cursus massa, eget placerat mi tellus vitae enim.</p>
+        </div>
+        <div id="disclaimer">
+            <h3>Disclaimer</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent iaculis commodo massa, a pharetra purus finibus nec. Ut vulputate hendrerit lacus vitae gravida. Aliquam non vehicula metus.</p>
+        </div>
+    </div>
+</footer>
+<script>
+
+
+    //HOME SCREEN ICON
+
+    if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+        navigator.serviceWorker.register('./sw.js').then(function (registration) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function (err) {
+            // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+        });
+    });
+}
+var deferredPrompt= false;
+window.addEventListener("load", () => {
+    deferredPrompt = true;
+})
+window.addEventListener('beforeinstallprompt', (e) => {
+    if(deferredPrompt){
+        e.prompt();
+        e.userChoice.then(choice => {
+            if(choice.outcome === "dismissed"){
+                deferredPrompt = false;
+            }
+        })
+    }else {
+        console.log('trigger is not trigerred!!');
+    }
+
+});
+
+
+
+    var promiseShowing = false;
+    var technologyShowing = false;
+    document.getElementById("promise").classList.remove("is-visible");
+    document.getElementById("technology").classList.remove("is-visible");
+    document.getElementById("closeX1").classList.remove("hide");
+    document.getElementById("closeX2").classList.remove("hide");
+    document.getElementById("closeX1").onclick = function(event) {
+        event.preventDefault();
+        document.getElementById("promise").classList.remove("is-visible");
+        document.getElementById("technology").classList.remove("is-visible");
+        document.getElementById("mainn").classList.remove("small-mainn");
+        promiseShowing=false;
+        document.getElementById("promiseLink").classList.remove("glow");
+        technologyShowing=false;
+        document.getElementById("technologyLink").classList.remove("glow");};
+    document.getElementById("closeX2").onclick = function(event) {
+        event.preventDefault();
+        document.getElementById("promise").classList.remove("is-visible");
+        document.getElementById("technology").classList.remove("is-visible");
+        document.getElementById("mainn").classList.remove("small-mainn");
+        promiseShowing=false;
+        document.getElementById("promiseLink").classList.remove("glow");
+        technologyShowing=false;
+        document.getElementById("technologyLink").classList.remove("glow");};
+    document.getElementById("promiseLink").onclick = function(event) {
+      event.preventDefault();
+      if (!promiseShowing) {
+        document.getElementById("mainn").classList.add("small-mainn");
+        document.getElementById("promise").classList.add("is-visible");
+        document.getElementById("technology").classList.remove("is-visible");
+        promiseShowing=true;
+        document.getElementById("promiseLink").classList.add("glow");
+        technologyShowing=false;
+        document.getElementById("technologyLink").classList.remove("glow");
+      } else {
+        document.getElementById("promise").classList.remove("is-visible");
+        document.getElementById("technology").classList.remove("is-visible");
+        document.getElementById("mainn").classList.remove("small-mainn");
+        promiseShowing=false;
+        document.getElementById("promiseLink").classList.remove("glow");
+        technologyShowing=false;
+        document.getElementById("technologyLink").classList.remove("glow");};};
+    document.getElementById("technologyLink").onclick = function(event) {
+      event.preventDefault();
+      if (!technologyShowing) {
+        document.getElementById("mainn").classList.add("small-mainn");
+        document.getElementById("technology").classList.add("is-visible");
+        document.getElementById("promise").classList.remove("is-visible");
+        technologyShowing=true;
+        document.getElementById("technologyLink").classList.add("glow");
+        promiseShowing=false;
+        document.getElementById("promiseLink").classList.remove("glow");
+      } else {
+        document.getElementById("promise").classList.remove("is-visible");
+        document.getElementById("technology").classList.remove("is-visible");
+        document.getElementById("mainn").classList.remove("small-mainn");
+        technologyShowing=false;
+        document.getElementById("technologyLink").classList.remove("glow");
+        promiseShowing=false;
+        document.getElementById("promiseLink").classList.remove("glow");};};
+    var xmlhttp = new XMLHttpRequest();
+    var submitemailBtn = document.getElementById("submitButton");
+    submitemailBtn.addEventListener("click", function(e) {
+        e.preventDefault();
+        var url = "/processemail";
+        var params = 'email=' + document.getElementById("emailinput").value;
+        xmlhttp.open("post", url, true);
+        xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xmlhttp.send(params);
+        xmlhttp.onreadystatechange = function() {
+            if ( xmlhttp.readyState != 4 ) return;
+            if ( xmlhttp.status != 200 ) {
+                alert(xmlhttp.status + ': ' + xmlhttp.statusText);
+            } else {
+                var res = JSON.parse(xmlhttp.responseText);
+                alert(res.Message);};};}, false);
+    var emailInput = document.getElementById("emailinput");
+    emailInput.addEventListener("click", function(e) {if ( e.keyCode == 13 ){submitemailBtn.click();};}, false);
+</script>
+</body>
+</html>
